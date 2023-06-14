@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "mobile-learning-project",
+    "slug": "mobile-learning-project"
+  }
+}
