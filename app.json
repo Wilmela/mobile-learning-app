@@ -4,7 +4,18 @@
     "web": {
       "bundler": "metro"
     },
+    "splash": {
+      "image": "./assets/images/splash.png"
+    },
     "name": "mobile-learning-project",
-    "slug": "mobile-learning-project"
+    "slug": "mobile-learning-project",
+    "extra": {
+      "eas": {
+        "projectId": "33030303-2340-4dde-87e1-2b28d44c6e4f"
+      }
+    },
+    "android": {
+      "package": "com.chukumela.mobilelearningproject"
+    }
   }
 }

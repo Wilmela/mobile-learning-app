@@ -97,7 +97,7 @@ const Quiz = () => {
   });
 
   return (
-    <SafeAreaView className="p-4 bg-gray-100">
+    <SafeAreaView className="p-4">
       <Stack.Screen
         options={{ title: `${quiz} Quiz`, headerShadowVisible: false }}
       />

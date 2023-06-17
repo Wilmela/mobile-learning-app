@@ -9,6 +9,7 @@ const email = "nnadikizito@gmail.com";
 import { View, Text } from "react-native";
 
 export default [
+  // Upholstery
   {
     subject: "Upholstery & Furniture-making",
     cover: upholstery,
@@ -30,7 +31,8 @@ export default [
     subject: "Wood Joints",
     cover: woodwork,
     audioId: 1,
-    video: "N9Yo-htlGU4",
+    video:
+      "wood+joins+beginner+tutorial&oq=wood+joins++beginner+tutorial&aqs=chrome..69i57.75345j0j4&sourceid=chrome&ie=UTF-8",
     readMore: "",
     email,
 
@@ -47,7 +49,7 @@ export default [
     subject: "Woodwork Machines",
     cover: woodworkMachines,
     audioId: 2,
-    video: "zgDMpWNsutQ",
+    video: "woodwork+machines+beginners+tutorial",
     readMore: "",
     email,
 
@@ -64,7 +66,7 @@ export default [
     subject: "Building Drawing",
     cover: buildingDrawing,
     audioId: 3,
-    video: "zgDMpWNsutQ",
+    video: "Building+drawing+beginners+tutorial",
     readMore: "",
     email,
     topics: [
@@ -80,7 +82,7 @@ export default [
     subject: "Roofing",
     cover: roofing,
     audioId: 4,
-    video: "zgDMpWNsutQ",
+    video: "roofing+beginners+tutorial",
     readMore: "",
     email,
     topics: [

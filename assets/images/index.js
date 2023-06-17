@@ -14,6 +14,7 @@ const w4 = require("./w4.png");
 const w5 = require("./w5.png");
 const w6 = require("./w6.png");
 const table = require("./table.png");
+const owner = require("./owner.jpg");
 
 const b1 = require("./b1.png");
 const b2 = require("./b2.png");
@@ -43,4 +44,5 @@ export {
   b4,
   r1,
   audioImage,
+  owner,
 };
