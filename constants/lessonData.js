@@ -266,7 +266,7 @@ export default [
     bgImg: upholstery,
     content: () => (
       <>
-        <HeadingText text="Summary" />
+        <HeadingText text="Summary on Upholstery and Furniture-making" />
         <SubHeadingText>
           1. A finished size of wood part would not be found on a bill of
           materials. {"\n"}
@@ -435,8 +435,7 @@ export default [
           2. End and butt joints are the two main types of butt joints. {"\n"}
           3. Butt joints can be strengthened using corner blocks, biscuits,
           dowels and metal fasteners. {"\n"}
-          4. Butt joints can be strengthened using corner blocks, biscuits,
-          dowels or metal fasteners. {"\n"}
+          4. Biscuits are made from compressed beech. {"\n"}
           5. When making biscuit joints, the slots should be slightly longer
           than the biscuits to allow for adjustments and expansion. {"\n"}
         </SubHeadingText>
@@ -508,7 +507,7 @@ export default [
   },
   {
     topic: "Safety and Operational Precautions",
-    bgImg: woodwork,
+    bgImg: woodworkMachines,
     content: () => (
       <>
         <HeadingText text="Safety and Operational Precautions" />
@@ -542,7 +541,7 @@ export default [
         <HeadingText text="Summary" />
         <SubHeadingText>
           1. Straight edge is not helper used to feed stock into a tool.{"\n"}
-          2. Leather ot thick fabric are types of gloves worn when working with
+          2. Leather or thick fabric are types of gloves worn when working with
           sharp edges and rough materials. {"\n"}
           3. The size of power drill is determined by the size of it's chuck.{" "}
           {"\n"}
@@ -604,7 +603,7 @@ export default [
   },
   {
     topic: "Parts of a Building",
-    bgImg: woodwork,
+    bgImg: buildingDrawing,
     content: () => (
       <>
         <HeadingText text="Parts of a Building" />
@@ -687,8 +686,8 @@ export default [
     ),
   },
   {
-    topic: "Woodwork Machines Summary",
-    bgImg: woodworkMachines,
+    topic: "Building Drawing Summary",
+    bgImg: buildingDrawing,
     content: () => (
       <>
         <HeadingText text="Summary" />
@@ -700,7 +699,7 @@ export default [
           marked for removal is known as Half. {"\n"}
           4.In offset sections, offsets or bends in the cutting plane are all 90
           degrees. {"\n"}
-          5. The type of solide that is egg-dhaoed and can be created by
+          5. The type of solid that is egg-shaped and can be created by
           revolving an ellipse around one of it's axes is called Ellipsoid.{" "}
           {"\n"}
         </SubHeadingText>
@@ -807,7 +806,7 @@ export default [
         <SubHeadingText>
           1. Birch is not a type of softwood.{"\n"}
           2. Fir is a type of hardwood. {"\n"}
-          3. The first step step in a lumber processing is called baking. {"\n"}
+          3. The first step in a lumber processing is called baking. {"\n"}
           4.When making a miter cut, adjust the overarm to the angle desired.{" "}
           {"\n"}
           5. To cut a bevel, adjust the track for duplicate part. {"\n"}

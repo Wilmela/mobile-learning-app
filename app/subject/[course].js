@@ -20,7 +20,7 @@ const Subject = () => {
     .topics.map((topic) => topic);
 
   return (
-    <View className="px-4">
+    <View className="px-4 bg-gray-100 flex-1">
       <Stack.Screen
         options={{
           headerShadowVisible: false,
@@ -43,6 +43,7 @@ const Subject = () => {
                   style={{
                     fontFamily: FONTS.Light,
                     fontSize: SIZES.Large - 6,
+                    textAlign: "center",
                   }}
                 >
                   {item}

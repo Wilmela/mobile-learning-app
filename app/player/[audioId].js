@@ -7,13 +7,14 @@ import {
   Image,
   useWindowDimensions,
 } from "react-native";
-import { Ionicons,Foundation  } from "@expo/vector-icons";
+import { Ionicons, Foundation } from "@expo/vector-icons";
 import { Audio } from "expo-av";
 import { Stack } from "expo-router";
 
 import { useSearchParams } from "expo-router";
 import { FONTS, SIZES } from "../../constants/theme";
 import audioLink from "../../constants/audioData";
+import { audioImage } from "../../assets/images";
 
 const AudioPlayer = () => {
   const { width, height } = useWindowDimensions();
@@ -89,13 +90,14 @@ const AudioPlayer = () => {
     }
   };
 
+  const iconColor = "#000";
   return (
     <View
       style={{
         width,
         height,
         alignItems: "center",
-        backgroundColor: "#ccc",
+        backgroundColor: "rgb(244, 243, 246)",
       }}
     >
       <Stack.Screen
@@ -106,9 +108,9 @@ const AudioPlayer = () => {
       />
       <View className="w-full h-[30%] items-center justify-center rounded-md">
         <Image
-          source={audioLink[audioId].img}
+          source={audioImage}
           resizeMode="contain"
-          className="w-full"
+          style={{ width: "100%", maxHeight: height * 0.4 }}
         />
       </View>
       {/* Title */}
@@ -130,24 +132,23 @@ const AudioPlayer = () => {
         </Text>
       </View>
       {audioId ? (
-        <View className='w-full flex-row items-center justify-evenly gap-5'>
-
+        <View className="w-full flex-row items-center justify-evenly">
           <Foundation
             name="rewind"
             size={width * 0.15}
-            color="#fff"
+            color={iconColor}
             onPress={handleRewind}
           />
           <Ionicons
             name={!isPlaying ? "play" : "pause"}
             size={width * 0.15}
-            color="#fff"
+            color={iconColor}
             onPress={playSound}
           />
           <Foundation
             name="fast-forward"
             size={width * 0.15}
-            color="#fff"
+            color={iconColor}
             onPress={handleFastForward}
           />
         </View>
@@ -160,6 +161,4 @@ const AudioPlayer = () => {
   );
 };
 
-
 export default AudioPlayer;
-

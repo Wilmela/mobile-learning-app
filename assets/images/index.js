@@ -5,6 +5,7 @@ const woodworkMachines = require("./woodworkMachines.jpeg");
 const buildingDrawing = require("./buildingDrawing.png");
 const roofing = require("./roofing.jpeg");
 const quiz = require("./quiz.svg");
+const audioImage = require("./audioImage.webp");
 
 const w1 = require("./w1.png");
 const w2 = require("./w2.png");
@@ -41,4 +42,5 @@ export {
   b3,
   b4,
   r1,
+  audioImage,
 };

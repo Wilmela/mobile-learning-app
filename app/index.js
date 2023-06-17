@@ -1,4 +1,13 @@
-import { View, Text, Image, SafeAreaView, Linking } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  SafeAreaView,
+  Linking,
+  KeyboardAvoidingView,
+  Platform,
+  useWindowDimensions,
+} from "react-native";
 import { SearchInput, QuizList, Subjects } from "../components";
 import { Stack } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -6,9 +15,10 @@ import { SIZES, FONTS } from "../constants/theme";
 import { logo } from "../assets/images";
 import { AppContextProvider } from "../context";
 const Home = () => {
+  const { height } = useWindowDimensions();
   return (
     <AppContextProvider>
-      <SafeAreaView className="p-4">
+      <SafeAreaView className="p-4 bg-gray-100" style={{ flex: 1 }}>
         <Stack.Screen
           options={{
             headerShadowVisible: false,
@@ -51,19 +61,23 @@ const Home = () => {
             },
           }}
         />
-        <Text
-          style={{
-            fontFamily: FONTS.Bold,
-            fontSize: SIZES.Large,
-            color: "#000",
-            marginBottom: 5,
-          }}
+        <KeyboardAvoidingView
+          behavior={Platform === "ios" ? "padding" : "height"}
         >
-          Welcome to <Text className="text-ACCENT text-3xl">CLASS!</Text>
-        </Text>
-        <SearchInput />
-        <QuizList />
-        <Subjects />
+          <Text
+            style={{
+              fontFamily: FONTS.Bold,
+              fontSize: SIZES.Large,
+              color: "#000",
+              marginBottom: 5,
+            }}
+          >
+            Welcome to <Text className="text-ACCENT text-3xl">CLASS!</Text>
+          </Text>
+          <SearchInput />
+          <QuizList />
+          <Subjects />
+        </KeyboardAvoidingView>
       </SafeAreaView>
     </AppContextProvider>
   );

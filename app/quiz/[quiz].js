@@ -5,14 +5,13 @@ import {
   FlatList,
   TouchableOpacity,
   Animated,
-  ImageBackground
 } from "react-native";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "expo-router";
 import { Stack } from "expo-router";
 import quizData from "../../constants/quizList";
 import { FONTS, SIZES } from "../../constants/theme";
-import { Ionicons, FontAwesome5 } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 
 // Radio button
 const RadioButton = ({ selected, onPress }) => {
@@ -98,7 +97,7 @@ const Quiz = () => {
   });
 
   return (
-    <SafeAreaView className="p-4 bg-APP_BLUE">
+    <SafeAreaView className="p-4 bg-gray-100">
       <Stack.Screen
         options={{ title: `${quiz} Quiz`, headerShadowVisible: false }}
       />
